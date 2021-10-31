@@ -35,7 +35,7 @@ export function ListaCifra(){
    <Container>
     {letters.map((letter, key) => { 
       return(
-        <Tabela key={key}>
+        <Tabela>
           <ItemTabela>{letter.name}</ItemTabela>
           <ItemTabela>{letter.value}</ItemTabela>
         </Tabela>

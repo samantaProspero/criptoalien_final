@@ -1,26 +1,19 @@
 import React from 'react';
-import { useRoute } from '@react-navigation/native';
 import { ImageBackground, StatusBar } from "react-native";
-import fase3 from "../../assets/fase3.jpg";
-
+import ceu from "../../assets/ceu.jpg";
 
 import { Container, Content, PrincipalContainer, DescriptionText,Title} from './styles'; 
 import { ReturnButton } from '../../componnents/ReturnButton';
 import { ListaCifra } from '../../componnents/ListaCifra';
 import { InputContainerDicaNumeros } from '../../componnents/InputContainerDicaNumeros';
 
-type Params = {
-  formatadas:[];
-}
 
-
-export function Screen14b(){
-  const route = useRoute()
-  const {formatadas} = route.params as Params
+export function Screen22(){
+  const formatadas = [1, 0, 21, 12]
 
   return (
     <Container>
-      <ImageBackground source={fase3} resizeMode="cover" style={{ flex: 1 }}>
+      <ImageBackground source={ceu} resizeMode="cover" style={{ flex: 1 }}>
         <StatusBar
           barStyle="dark-content"
           translucent
@@ -32,12 +25,12 @@ export function Screen14b(){
             <ListaCifra />
             <Title>
               [
-              {formatadas.map((conta: number, key) => (
-                <DescriptionText key={key}>{conta} </DescriptionText>
+              {formatadas.map((conta, key) => (
+                <DescriptionText >{conta} </DescriptionText>
               ))}
               ]
             </Title>
-            <InputContainerDicaNumeros lista={formatadas} />
+            <InputContainerDicaNumeros lista={formatadas} screen="Screen23" />
           </PrincipalContainer>
         </Content>
       </ImageBackground>

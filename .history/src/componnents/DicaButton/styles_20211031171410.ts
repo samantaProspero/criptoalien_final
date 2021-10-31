@@ -5,10 +5,11 @@ import { RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled(RectButton)`
   padding: 8px;
+  width: 100%;
   border-radius: 5px;
   align-items: center;
   align-self: flex-end;
-  /* background-color: black; */
+  background-color: orange;
 `;
 
 export const ButtonText = styled.Text`

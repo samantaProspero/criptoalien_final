@@ -33,7 +33,7 @@ export function Screen14b(){
             <Title>
               [
               {formatadas.map((conta: number, key) => (
-                <DescriptionText key={key}>{conta} </DescriptionText>
+                <DescriptionText>{conta} </DescriptionText>
               ))}
               ]
             </Title>

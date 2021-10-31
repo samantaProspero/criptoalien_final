@@ -4,11 +4,12 @@ import { RectButton } from 'react-native-gesture-handler';
 //import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled(RectButton)`
-  padding: 8px;
-  border-radius: 5px;
+  /* padding: 8px; */
+  /* width: 100%; */
+  /* border-radius: 5px; */
   align-items: center;
   align-self: flex-end;
-  /* background-color: black; */
+  background-color: black;
 `;
 
 export const ButtonText = styled.Text`

@@ -11,6 +11,13 @@ export const Container = styled(RectButton)`
   /* background-color: black; */
 `;
 
+export const Content = styled.View`
+  /* width: 100%;
+  height: 100%; */
+  align-items: center;
+  justify-content: center;
+
+`;
 export const ButtonText = styled.Text`
   font-family: ${({theme}) => theme.fonts.poppins_400};
   font-size: 18px;

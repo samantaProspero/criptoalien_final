@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { RectButton } from 'react-native-gesture-handler';
+import { RectButton, TouchableOpacity } from 'react-native-gesture-handler';
 
 //import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
@@ -8,9 +8,14 @@ export const Container = styled(RectButton)`
   border-radius: 5px;
   align-items: center;
   align-self: flex-end;
-  /* background-color: black; */
+  background-color: black;
 `;
 
+export const Content = styled.View`
+  width: 100%;
+  hei
+
+`;
 export const ButtonText = styled.Text`
   font-family: ${({theme}) => theme.fonts.poppins_400};
   font-size: 18px;
